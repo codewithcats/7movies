@@ -1,0 +1,15 @@
+{
+  "version": "0.1.0",
+  "private": true,
+  "name": "angular-7movies",
+  "description": "A movies app using AngularJS",
+  "repository": "https://github.com/tnwt7/7movies.git",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.6.1"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server -a 0.0.0.0 -p 8000"
+  }
+}
