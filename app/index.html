@@ -10,6 +10,7 @@
         <!-- Bootstrap -->
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+        <link rel="stylesheet" href="app.css">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,16 +25,19 @@
         <h1>{{ ctrl.title }}</h1>
         <h2>{{ ctrl.movie.Title }}</h2>
         <div class="row">
-          <ul class="col-sm-6">
+          <ul class="col-sm-6 episodes">
               <li ng-repeat="ep in ctrl.movie.Episodes"
                   ng-click="ctrl.select(ep)">
                   {{ ep.Title }}
               </li>
           </ul>
           <section class="col-sm-6">
+            <h2>{{ctrl.episode.Title}}</h2>
             <img ng-src="{{ctrl.episode.Poster}}" />
           </section>
         </div>
+        <h2>{{ ctrl.movies.Title }}</h2>
+        <p>{{ ctrl.movies.Plot }}</p>
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
         <script src="app.js"></script>

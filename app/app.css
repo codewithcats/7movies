@@ -1,0 +1,7 @@
+.episodes li {
+  cursor: pointer;
+}
+
+.episodes li:hover {
+  color: blue;
+}
